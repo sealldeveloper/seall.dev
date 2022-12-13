@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sealldev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://seall.dev
+  * I am sealldev (https://keybase.io/sealldev) on keybase.
+  * I have a public key ASCkrE1uyQ0R9nx6ukJyqcDVK-QUvUQJRehToI2h4bRgfQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012063fc9e27eef54260b0e22c62cd6b9f37c11a40452d1211bb7526701669c4a6750a",
+      "host": "keybase.io",
+      "kid": "0120a4ac4d6ec90d11f67c7aba4272a9c0d52be414bd440945e853a08da1e1b4607d0a",
+      "uid": "9dcb98c279b4e07374d094398019ad19",
+      "username": "sealldev"
+    },
+    "merkle_root": {
+      "ctime": 1645800169,
+      "hash": "4a597e6fe897e7fedbdfc69e90371856264b10671facded04c9c407d8a5bcdbfc08c594ee1ff1fd43c9a030cc2e4dda9c30459f2cbd349aec0e9f62c6648a1d7",
+      "hash_meta": "0bc03c531bbebf5e8e396d65d8cdf5b46f0fd125baff2d6f3832022d30e4e4ff",
+      "seqno": 21953372
+    },
+    "service": {
+      "entropy": "DEKFc88ZZ79+enxKaPqfiuDd",
+      "hostname": "seall.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1645800175,
+  "expire_in": 504576000,
+  "prev": "9fda5758bddc146d6756d9a4650b0a51f94b01248139376bd1df0c3e6cf0d35d",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpKxNbskNEfZ8erpCcqnA1SvkFL1ECUXoU6CNoeG0YH0Kp3BheWxvYWTESpcCDMQgn9pXWL3cFG1nVtmkZQsKUflLASSBOTdr0d8MPmzw013EINBKRoOp5kE/JR3BzQZM0sxO0PUVuPBAhebbi23mGQG7AgHCo3NpZ8RAWFiDRuhUsDPUvbRnvj2iddJsqIUxMSy1RSQZDOlT6ADZTi6OPGb7Ikq15InPGGA9BvMpLDQAZf+atLU3J5eTAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEj/mn0zYCskPZoInwAlANwdfgbmNY066uJYIhWGEYYao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sealldev
+
+==================================================================
