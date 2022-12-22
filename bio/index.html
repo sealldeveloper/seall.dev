@@ -1,167 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:rgb(17, 5, 29) ;">
 <head>
 	<title>Seal ✵</title>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5556515162447894"
-     crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A website by Seal showcasing their projects and a bio.">
-	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-	<link rel="manifest" href="icons/site.webmanifest">
-	<link rel="stylesheet" href="assets/bootstrap.min.css" />
-	<script src="assets/bootstrap.min.js"></script>
-	<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="icons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+	<link rel="manifest" href="../icons/site.webmanifest">
+	<link rel="shortcut icon" href="../icons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#603cba">
-	<meta name="msapplication-config" content="icons/browserconfig.xml">
+	<meta name="msapplication-config" content="../icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta charset="UTF-8">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Seal ✵">
 	<meta property="og:title" content="Seal ✵" />
 	<meta name="twitter:card" content="summary_large_image">
-	<link rel="stylesheet" href="https://seall.dev/css/font-awesome.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://seall.dev/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://seall.dev/css/mdb.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css" crossorigin="anonymous">
-  <script src="https://seall.dev/js/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://seall.dev/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="js/title.js"></script>
-	<link rel="stylesheet" href="assets/style.css">
-</head>
-<style>
-	.enter {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	<link rel="stylesheet" href="../css/topnav.css">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
+	<script src="../js/title.js"></script>
+	<style>
 
-		border: 0px solid black;
-		font-size: 20px;
-		color: white;
-		font-weight: 200;
-		font-family: "Roboto", sans-serif;
-		overflow: hidden;
-		background-color: #171b1f;
-		transition: 0.3s;
-		text-align: center;
+		body {
+			-webkit-touch-callout: none; 
+			-webkit-user-select: none; 
+			-khtml-user-select: none; 
+			-moz-user-select: none; 
+			-ms-user-select: none; 
+			user-select: none; 
+			color: white;
+			overflow:auto;
+			background-color: #171b1f;
+			font-weight: 500;
+			margin-top: 15vh;
+		}
 
-	}
-	.enter:hover {
-		background-color: #757575;
-	}
-	body {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-   -khtml-user-select: none; 
-     -moz-user-select: none; 
-      -ms-user-select: none; 
-         user-select: none; 
-color: white;
-overflow:auto;
-background-color: #171b1f;
-font-family: "Roboto", sans-serif;
-font-weight: 500;
+		
+		.curved-zoom {
+			transition: transform .2s; /* Animation */
+			margin: 0 auto;
+			z-index:101;
+			margin: 10px; 
+			border-radius: 15px; 
+		}
+		.curved-zoom:hover {
+			transform: translateY(-8px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+			z-index:102;
+		}
+		.justhover{
+			width:auto;
+			transition: transform .2s
+		}
+		.justhover:hover {
+			transform: translateY(-6px);
+		}
+		.icon-zoom {
+			transition: transform .2s; /* Animation */
+		margin: 0 auto;
+		z-index:101;
+		margin: 10px; 
+		}
+		.icon-zoom:hover {
+		transform: translateY(-6px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		z-index:102;
+		}
+		
 
-margin-top: 15vh;
-
-}
-    .zoom {
-      transition: transform .2s; /* Animation */
-      margin: 0 auto;
-      z-index:101;
-    }
-    
-    .zoom:hover {
-      transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      z-index:102;
-    }
-	.curved-zoom {
-		transition: transform .2s; /* Animation */
-      margin: 0 auto;
-      z-index:101;
-	  margin: 10px; 
-	  border-radius: 15px; 
-	}
-	.curved-zoom:hover {
-      transform: translateY(-8px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      z-index:102;
-    }
-	.justhover{
-		width:auto;
-		transition: transform .2s
-	}
-	.justhover:hover {
-		transform: translateY(-6px);
-	}
-	.icon-zoom {
-		transition: transform .2s; /* Animation */
-      margin: 0 auto;
-      z-index:101;
-	  margin: 10px; 
-	}
-	.icon-zoom:hover {
-      transform: translateY(-6px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      z-index:102;
-    }
-	.curved-icon {
-	margin: 10px; border-radius: 15px; pointer-events: none;
-	}
-
-	.icon {
-	margin: 10px; pointer-events: none;
-	}
-	.owo {
-    margin-right: 10px;
-    transition: all 0.20s linear;
-    border-style: solid;
-    color: var(--color);
-	border-width:2px;
-	border-color:rgb(112, 35, 184);
-  }
-  
-  .owo:hover {
-    transform: translateY(-6px);
-    border-radius: 28px;
-    color: var(--color);
-    border-bottom-right-radius: 28px;
-    border-top-right-radius: 28px;
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
-    }
-  .parent:hover .owo:not(:hover) {
-    border-radius: 29px;
+		
+		.coolButton {
+			margin-right: 10px;
+			transition: all 0.20s linear;
+			border-style: solid;
+			color: var(--color);
+			border-width:2px;
+			border-color:rgb(112, 35, 184);
+		}
 	
-  }
-  .enter {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        left:0px;
-        right:0px;
-		border: 0px solid black;
-		font-size: 20px;
-		color: white;
-		font-weight: 200;
-		font-family: "Roboto", sans-serif;
-		overflow:auto;
-		background-color: #171b1f;
-        position:relative;
-		transition: 0.3s;
-		text-align: center;
-		display:inline;
-	}
+		.coolButton:hover {
+			transform: translateY(-6px);
+			border-radius: 28px;
+			border-bottom-right-radius: 28px;
+			border-top-right-radius: 28px;
+			border-top-left-radius: 28px;
+			border-bottom-left-radius: 28px;
+			border-color:rgb(112, 35, 184);
+		}
+		.parent:hover .coolButton:not(:hover) {
+			border-radius: 29px;
+			
+		}
+		
+		.enter {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			left:0px;
+			right:0px;
+			border: 0px solid black;
+			font-size: 20px;
+			color: white;
+			font-weight: 200;
+			overflow:auto;
+			background-color: #171b1f;
+			position:relative;
+			transition: 0.3s;
+			text-align: center;
+		}
+		
+		
+		a:hover {
+			color:inherit;
+		}
+		.enter:hover {
+			background-color: #757575;
+		}
+		
     </style>
 </head>
-<div class="topnav">
-	<a href="../">Home</a>
-	<a href="../projects">Projects</a>
-	<a class="active" href="./">About</a>
-</div>
 <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 <body style="background-color:rgb(17, 5, 29) ;">
+	<div class="topnav">
+		<a href="../">Home</a>
+		<a href="../projects">Projects</a>
+		<a class="active" href="./">About</a>
+	</div>
 	<div id="soundtrack"></div>
-	<div class="container mt-3 text-center" style="background-color:rgb(29, 8, 49) ; overflow:hidden;	padding-bottom:40px;	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+	<div class="container mt-3 text-center" style="background-color:rgb(29, 8, 49) ; overflow:hidden;	padding-bottom:40px;">
 		<h1 class="lo" , style="font-weight:400;padding-top:40px"class="featurette-heading">About</h1>
 		<br>
-		<img src="assets/bettergif.gif" class="justhover" width="120" height="108" style="border-radius:20px">
+		<img src="../assets/bettergif.gif" class="justhover" width="120" height="108" style="border-radius:20px">
 		<h3 style="padding-top:10px"></h3>
 		<h3 style="text-align:center;font-size:20px">Im Seal, I make cool stuff for everyone. He/Him. ⏎</h3>
 		<h3 style="padding-top:10px"></h3>
@@ -177,16 +149,16 @@ margin-top: 15vh;
 		<h3 style="padding-bottom:25px"></h3>
 		<h3 style="text-align:center;font-size:20px">Platforms</h3>
 		<a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
-			<img  class="icon-zoom"  src="assets/python.png" alt="Python" href="_blank" height="50" width="auto" />
+			<img  class="icon-zoom"  src="../assets/python.png" alt="Python" href="_blank" height="50" width="auto" />
 		</a>
 		<a href="https://www.photoshop.com/" target="_blank" rel="noopener noreferrer">
-			<img class="curved-zoom" src="assets/ps.png" alt="Photoshop" height="50" width="auto"/>
+			<img class="curved-zoom" src="../assets/ps.png" alt="Photoshop" height="50" width="auto"/>
 		</a>
 		<a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
-			<img  class="curved-zoom"  src="assets/nodejs.jfif" alt="Node.js" height="50" width="auto"/>
+			<img  class="curved-zoom"  src="../assets/nodejs.jfif" alt="Node.js" height="50" width="auto"/>
 		</a>
 		<a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer">
-			<img  class="curved-zoom"  src="assets/premire.png" alt="Premiere Pro" height="50" width="auto"/>
+			<img  class="curved-zoom"  src="../assets/premire.png" alt="Premiere Pro" height="50" width="auto"/>
 		</a>
 		<a href="https://html.com/html5/" target="_blank" rel="noopener noreferrer">
 			<img  class="curved-zoom"  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&f=1&nofb=1" alt="HTML" height="50" />
@@ -194,33 +166,33 @@ margin-top: 15vh;
 		<h3 style="padding-top:10px"></h3>
 		<h3 style="text-align:center;font-size:20px">Tools</h3>
 		<a href="https://metasploit.com/" target="_blank" rel="noopener noreferrer">
-			<img  class="icon-zoom"  src="assets/metasploit.png" alt="Metasploit" href="_blank" height="50" width="auto" />
+			<img  class="icon-zoom"  src="../assets/metasploit.png" alt="Metasploit" href="_blank" height="50" width="auto" />
 		</a>
 		<a href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer">
-			<img  class="icon-zoom"  src="assets/wireshark.png" alt="Wireshark" href="_blank" height="50" width="auto" />
+			<img  class="icon-zoom"  src="../assets/wireshark.png" alt="Wireshark" href="_blank" height="50" width="auto" />
 		</a>
 		<a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer">
-			<img  class="icon-zoom"  src="assets/burpsuite.png" alt="Burp Suite" href="_blank" height="50" width="auto" />
+			<img  class="icon-zoom"  src="../assets/burpsuite.png" alt="Burp Suite" href="_blank" height="50" width="auto" />
 		</a>
 		<h3 style="padding-top:10px"></h3>
 		<div class="btn-group" role="group">
-			<a class="btn owo" role="button" target="_blank" href="mailto:admin@seall.dev">Email</a>
+			<a class="btn coolButton" role="button" target="_blank" href="mailto:admin@seall.dev">Email</a>
 			<h3 style="padding-right:15px"></h3>
-			<a class="btn owo" role="button" target="_blank" href="https://github.com/sealldeveloper">Github</a>
+			<a class="btn coolButton" role="button" target="_blank" href="https://github.com/sealldeveloper">Github</a>
 			<h3 style="padding-right:15px"></h3>
-			<a class="btn owo" role="button" target="_blank" href="../projects">Projects</a>
+			<a class="btn coolButton" role="button" target="_blank" href="../projects">Projects</a>
 			<h3 style="padding-right:15px"></h3>
-			<a class="btn owo" role="button" target="_blank" href="..">Website</a>
+			<a class="btn coolButton" role="button" target="_blank" href="..">Website</a>
 		</div>
 	</div>
 	<h3 style="padding-bottom:5px"></h3>
 	<h3 style="text-align:center;font-size:10px">(thanks for the age code Ottomated :)) -- Maintained and redesigned by <a href="https://github.com/sealldeveloper" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">Seal</a></h3>
 </body>
 <script>
-	let ageEl = document.getElementById("age");
+	let age = document.getElementById("age");
 	setInterval(() => {
 		let time = dayjs().diff(dayjs('2006-02-05'), 'year', true);
-		ageEl.innerText = time.toString().substring(0, 13);
+		age.innerText = time.toString().substring(0, 13);
 	}, 25);
 
 </script>

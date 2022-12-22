@@ -1,108 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:rgb(17, 5, 29) ;">
 <head>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5556515162447894"
-     crossorigin="anonymous"></script>
 	<title>Seal ✵</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A website by Seal showcasing their projects and a bio.">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
-    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../icons/site.webmanifest">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../icons/favicon.ico">
     <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="msapplication-config" content="../icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 	<meta charset="UTF-8">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Seal ✵">
 	<meta property="og:title" content="Seal ✵" />
 	<meta name="twitter:card" content="summary_large_image">
-	<link rel="stylesheet" href="https://seall.dev/css/font-awesome.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://seall.dev/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://seall.dev/css/mdb.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css" crossorigin="anonymous">
-  <script src="https://seall.dev/js/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://seall.dev/js/popper.min.js" crossorigin="anonymous"></script>
-	<script src="js/title.js"></script>
-	<link rel="stylesheet" href="assets/style.css">
-</head>
-<style>
-    .justhover{
-		transition: transform .2s
-	}
-	.justhover:hover {
-		transform: translateY(-4px);
-	}
-	.enter {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        left:0px;
-        right:0px;
-		border: 0px solid black;
-		font-size: 20px;
-		color: white;
-		font-weight: 200;
-		font-family: "Roboto", sans-serif;
-		overflow:auto;
-		background-color: #171b1f;
-        position:relative;
-		transition: 0.3s;
-		text-align: center;
-	}
-    a {
-        color:inherit;
-    }
-    td {
-  text-align: center;
+    <link rel="stylesheet" href="../css/topnav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
+	<script src="../js/title.js"></script>
+    <style>
+        .justhover{
+            transition: transform .2s
+        }
+        .justhover:hover {
+            transform: translateY(-4px);
+        }
+
+        .enter {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            left:0px;
+            right:0px;
+            border: 0px solid black;
+            font-size: 20px;
+            color: white;
+            font-weight: 200;
+            
+            overflow:auto;
+            position:relative;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .enter:hover {
+            background-color: #757575;
+        }
+
+        a {
+            color:inherit;
+            
+        }
+        a:hover {
+            color:inherit;
+        }
+
+        td {
+            text-align: center;
+            
+        }
+        
+        .th-custom {
+            overflow:auto;
+            font-weight: 200;
+            
+            text-align: center;
+            padding-left:5px;
+            padding-right:5px;
+            font-size:28px;
+            margin:10px
+        }
+
+        body {
+            -webkit-touch-callout: none; 
+            -webkit-user-select: none; 
+            -khtml-user-select: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+            color: white;
+            overflow:auto;
+            
+            font-weight: 500;
+            margin-top: 15vh;
+        }
+        .topnav {
+    display: flex;
+    transition: 1s;
+    position: absolute;
+    z-index: 0;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(29, 8, 49);
+    overflow:auto;
+    align-content: center;
+    float: center;
 }
-    a:hover {
-        color:inherit;
-    }
-	.enter:hover {
-		background-color: #757575;
-	}
-    .th-custom {
-        overflow:auto;
-        font-weight: 200;
-		font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-left:5px;
-        padding-right:5px;
-        font-size:28px;
-        margin:10px
-    }
-
-    body {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-   -khtml-user-select: none; 
-     -moz-user-select: none; 
-      -ms-user-select: none; 
-         user-select: none; 
-color: white;
-overflow:auto;
-background-color: #171b1f;
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-
-margin-top: 15vh;
-
-
+.topnav a {
+    transition: 1s;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-</style>
+
+.topnav a:hover {
+    transition: 0.2s;
+    opacity: 0.6;
+    color: #db20c2;
+}
+
+.topnav a.active {
+    color: grey;
+}
+    </style>
 </head>
-<div class="topnav">
-	<a href="../">Home</a>
-	<a class="active" href="./">Projects</a>
-	<a href="../bio">About</a>
-</div>
+
+
+
 <body style="background-color:rgb(17, 5, 29) ;">
+    <div class="topnav">
+        <a href="../">Home</a>
+        <a class="active" href="./">Projects</a>
+        <a href="../bio">About</a>
+    </div>
 	<div id="soundtrack"></div>
-	<div class="container mt-3 text-center" style="background-color:rgb(29, 8, 49) ; overflow:hidden;	padding-bottom:40px;	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+	<div class="container mt-3 text-center" style="background-color:rgb(29, 8, 49) ; overflow:hidden;	padding-bottom:40px;">
 		<h1 class="lo" , style="font-weight:400;padding-top:40px" class="featurette-heading">Projects</h1>
-		<p class="lo">Last Updated Wed, 26th of July 2022</p>
+		<p class="lo">Last Updated Wed, 22nd of December 2022</p>
 		<br>
         <table style="display:inline">
             <tr>
@@ -112,52 +146,52 @@ margin-top: 15vh;
             </tr>
             <tr>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/globe.png" alt="Geoguessr Cheats" width="50" height="50">
+                    <img src="../assets/globe.png" alt="Geoguessr Cheats" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://sealldeveloper.github.io/Geoguessr-Cheat-Sheet/" target="_blank" rel="noopener noreferrer">Geoguessr Cheats</a></h3>
                     <h3 style="padding-bottom:25px"></h3>
                 </div></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/kahoot.png" alt="Kahoot Bomber" style="border-radius: 10px;" width="50" height="50">
+                    <img src="../assets/kahoot.png" alt="Kahoot Bomber" style="border-radius: 10px;" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://github.com/sealldeveloper/KHX/" target="_blank" rel="noopener noreferrer">KHX Kahoot Bomber</a></h3>
                     <h3 style="padding-bottom:25px"></h3>
                 </div></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/snail.jpg" alt="Snail Chase" style="border-radius: 10px;" width="50" height="50">
+                    <img src="../assets/snail.jpg" alt="Snail Chase" style="border-radius: 10px;" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://www.planetminecraft.com/data-pack/1-17-snail-chase-an-ai-based-manhunt-style-chase/" target="_blank" rel="noopener noreferrer">Snail Chase</a></h3>
                     <h3 style="padding-bottom:25px"></th>
             </tr>
             <tr>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/tweetordrink.png" alt="Tweet or Drink" width="75" height="50">
+                    <img src="../assets/tweetordrink.png" alt="Tweet or Drink" width="75" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://sealldeveloper.github.io/tweet-or-drink/" target="_blank" rel="noopener noreferrer">Tweet or Drink</a></h3>
                     <h3 style="padding-bottom:25px"></h3>
                 </div></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/youtube.png" alt="YouTube URLs" width="75" height="50">
+                    <img src="../assets/youtube.png" alt="YouTube URLs" width="75" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://sealldeveloper.github.io/custom-youtube-urls/" target="_blank" rel="noopener noreferrer">YouTube URLs</a></h3>
                     <h3 style="padding-bottom:25px"></h3>
                 </div></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/hydrophobia.png" alt="Hydrophobia" style="border-radius: 10px;" width="50" height="50">
+                    <img src="../assets/hydrophobia.png" alt="Hydrophobia" style="border-radius: 10px;" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://www.planetminecraft.com/data-pack/1-17-hydrophobia-water-hurts-man/" target="_blank" rel="noopener noreferrer">Hydrophobia</a></h3>
                     <h3 style="padding-bottom:25px"></th>
             </tr>
             <tr>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/treasure.png" alt="Treasure Hunt Generator" width="50" height="50">
+                    <img src="../assets/treasure.png" alt="Treasure Hunt Generator" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://sealldeveloper.github.io/treasure-hunt-generator/" target="_blank" rel="noopener noreferrer">Treasure Hunt Generator</a></h3>
                     <h3 style="padding-bottom:25px"></h3>
                 </div></th>
                 <th></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/photophobia.png" alt="Photophobia" style="border-radius: 10px;" width="50" height="50">
+                    <img src="../assets/photophobia.png" alt="Photophobia" style="border-radius: 10px;" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://www.planetminecraft.com/data-pack/1-17-photophobia-light-hurts/" target="_blank" rel="noopener noreferrer">Photophobia</a></h3>
                     <h3 style="padding-bottom:25px"></th>
@@ -166,7 +200,7 @@ margin-top: 15vh;
                 <th></th>
                 <th></th>
                 <th><div class="justhover" style="margin:10px;text-align: left;">
-                    <img src="assets/nyctophobia.png" alt="Nyctophobia" style="border-radius: 10px;" width="50" height="50">
+                    <img src="../assets/nyctophobia.png" alt="Nyctophobia" style="border-radius: 10px;" width="50" height="50">
                     <h3 style="display:inline;padding-left:10px"></h3>
                     <h3 style="display:inline;width: 200px"class="enter"><a href="https://www.planetminecraft.com/data-pack/1-17-hyctophobia-darkness-hurts/" target="_blank" rel="noopener noreferrer">Nyctophobia</a></h3>
                     <h3 style="padding-bottom:25px"></th>
