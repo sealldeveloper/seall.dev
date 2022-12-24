@@ -23,60 +23,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/topnav.css">
+    <link rel="stylesheet" href="../css/hovers.css">
+    <link rel="stylesheet" href="../css/selectable-boxes.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
 	<script src="../js/title.js"></script>
     <style>
-        .justhover{
-            transition: transform .2s
-        }
-        .justhover:hover {
-            transform: translateY(-4px);
-        }
-
-        .enter {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            left:0px;
-            right:0px;
-            border: 0px solid black;
-            font-size: 20px;
-            color: white;
-            font-weight: 200;
-            
-            overflow:auto;
-            position:relative;
-            transition: 0.3s;
-            text-align: center;
-        }
-        .enter:hover {
-            background-color: #757575;
-        }
-
-        a {
-            color:inherit;
-            
-        }
-        a:hover {
-            color:inherit;
-        }
-
         td {
-            text-align: center;
-            
+            text-align: center;   
         }
-        
         .th-custom {
             overflow:auto;
             font-weight: 200;
-            
             text-align: center;
             padding-left:5px;
             padding-right:5px;
             font-size:28px;
             margin:10px
         }
-
         body {
             -webkit-touch-callout: none; 
             -webkit-user-select: none; 
@@ -86,42 +51,10 @@
             user-select: none; 
             color: white;
             overflow:auto;
-            
+            font-family: monospace;
             font-weight: 500;
             margin-top: 15vh;
         }
-        .topnav {
-    display: flex;
-    transition: 1s;
-    position: absolute;
-    z-index: 0;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(29, 8, 49);
-    overflow:auto;
-    align-content: center;
-    float: center;
-}
-.topnav a {
-    transition: 1s;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    transition: 0.2s;
-    opacity: 0.6;
-    color: #db20c2;
-}
-
-.topnav a.active {
-    color: grey;
-}
     </style>
 </head>
 

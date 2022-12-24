@@ -10,6 +10,7 @@
     overflow:auto;
     align-content: center;
     float: center;
+    font-family: monospace;
 }
 .topnav a {
     transition: 1s;
@@ -19,14 +20,17 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: monospace;
 }
 
 .topnav a:hover {
     transition: 0.2s;
     opacity: 0.6;
     color: #db20c2;
+    font-family: monospace;
 }
 
 .topnav a.active {
-    color: grey;
+    color: rgb(128, 128, 128);
+    font-family: monospace;
 }

@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/topnav.css">
+	<link rel="stylesheet" href="../css/hovers.css">
+	<link rel="stylesheet" href="../css/zooms.css">
+	<link rel="stylesheet" href="../css/selectable-boxes.css">
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" crossorigin="anonymous"></script>
   	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
@@ -41,39 +44,7 @@
 			font-weight: 500;
 			margin-top: 15vh;
 		}
-
-		
-		.curved-zoom {
-			transition: transform .2s; /* Animation */
-			margin: 0 auto;
-			z-index:101;
-			margin: 10px; 
-			border-radius: 15px; 
-		}
-		.curved-zoom:hover {
-			transform: translateY(-8px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-			z-index:102;
-		}
-		.justhover{
-			width:auto;
-			transition: transform .2s
-		}
-		.justhover:hover {
-			transform: translateY(-6px);
-		}
-		.icon-zoom {
-			transition: transform .2s; /* Animation */
-		margin: 0 auto;
-		z-index:101;
-		margin: 10px; 
-		}
-		.icon-zoom:hover {
-		transform: translateY(-6px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-		z-index:102;
-		}
-		
-
-		
+		/* Cool Buttons at the bottom of the page*/
 		.coolButton {
 			margin-right: 10px;
 			transition: all 0.20s linear;
@@ -96,29 +67,7 @@
 			border-radius: 29px;
 			
 		}
-		
-		.enter {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			left:0px;
-			right:0px;
-			border: 0px solid black;
-			font-size: 20px;
-			color: white;
-			font-weight: 200;
-			overflow:auto;
-			background-color: #171b1f;
-			position:relative;
-			transition: 0.3s;
-			text-align: center;
-		}
-		
-		
-		a:hover {
-			color:inherit;
-		}
-		.enter:hover {
-			background-color: #757575;
-		}
+
 		
     </style>
 </head>
@@ -141,9 +90,9 @@
 		<h3 style="padding-top:10px"></h3>
 		<h3 style="text-align:center;font-size:20px">I've learnt penetration testing on TryHackMe and I'm in the Top 5000 players as the 26th of July 2022</h3>
 		<h3 style="padding-top:10px"></h3>
-		<h3 style="text-align:center;font-size:20px">I'm also that clown that made the <a class="enter" href="https://sealldeveloper.github.io/custom-youtube-urls/" target="_blank" rel="noopener noreferrer">YouTube URLs</a></h3>
-		<h3 style="padding-top:10px"></h3>
-		<script src="https://tryhackme.com/badge/450794"></script>
+		<h3 class="justhover" style="display:inline-flex">
+			<script src="https://tryhackme.com/badge/450794" ></script>
+		</h3>
 		<h3 style="padding-top:5px"></h3>
 		<img src="https://komarev.com/ghpvc/?username=sealldeveloper&style=flat-square&color=blueviolet" class="justhover">
 		<h3 style="padding-bottom:25px"></h3>

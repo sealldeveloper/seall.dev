@@ -19,36 +19,23 @@
 	<meta property="og:title" content="Seal ✵" />
 	<meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/fabs.css">
+  <link rel="stylesheet" href="css/typewriter.css">
+  <link rel="stylesheet" href="css/selectable-boxes.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js" crossorigin="anonymous"></script>
   <style>
-    .enter {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        left:0px;
-        right:0px;
-        border: 0px solid black;
-        font-size: 40px;
-        color: white;
-        font-weight: 300;
-        font-family: monospace;
-        overflow:hidden;
-        background-color: #1c1e20;
-        transition: 0.3s;
-        text-align: center;
-    }
     a {
         color:inherit;
     }
     a:hover {
         color:inherit;
-    }
-    .enter:hover {
-      background-color: #757575;
     }
     body {
       -webkit-touch-callout: none; 
@@ -62,174 +49,14 @@
       background-color: #171b1f;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
-
       margin-top: 40vh;
-
     }
-
-    .typewriter {
-      font-family: monospace;
-      font-weight: 300;
-      letter-spacing: .11em;
-      margin: 0 auto;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: .11em solid #FF0048;
-      animation: typing 3.5s steps(50, end), blinking-cursor .5s step-end infinite;
-      z-index:100;
-    }
-      
-    .subtypewriter {
-      font-family: monospace;
-      font-weight: 300;
-      letter-spacing: .11em;
-      margin: 0 auto;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: .11em solid #FF0048;
-      opacity:0%;
-      animation: typing2 3.5s steps(50, end), blinking-cursor .5s step-end infinite;
-      animation-delay: 3s;
-      z-index:100;
-    }
-      
-    @keyframes typing2 {
-      from {
-        opacity:100%;
-        width: 0;
-        z-index:100;
-      }
-      to {
-          opacity: 100%;
-          width: 100%;
-          z-index:100;
-      }
-      }
-      
-    @keyframes typing {
-      from {
-        opacity:100%;
-        width: 0;
-        z-index:100;
-      }
-      to {
-        opacity: 100%;
-        width: 100%;
-        z-index:100;
-      }
-    }
-      
-    @keyframes blinking-cursor {
-      from,
-      to {
-        opacity: 100%;
-        border-color: transparent;
-        z-index:100;
-      }
-      50% {
-        opacity: 100%;
-        border-color: #FF0048;
-        z-index:100;
-      }
-    }
-
-    sexyButton {
-    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 20px, rgba(48, 48, 48, 0.6) -10px -10px 20px;
-      border: 0px solid black;
-      font-size: 30px;
-      color: white;
-      font-weight: 200;
-      font-family: "Roboto", sans-serif;
-      overflow:auto;
-      background-color: #171b1f;
-      top: 47%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      display: block;
-      width: 1500px;
-      height: 50px;
-      transition: 0.3s;
-      text-align: center;
-
-    }
-
-    h1 {
-    font-size: 40px;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s;
-    font-weight: 300;
-    z-index:100;
-    }
-
-
-    p {
-    font-size: 20;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s;
-    font-weight: 300;
-    }
-
-    .fab {
-      transition: 1s;
-      padding: 10px;
-      color: rgb(233,233,233);
-      font-size: 15px;
-      width: 60px;
-      text-align: center;
-      text-decoration: none;
-      margin: 2px 2px;
-
-    }
-
-    .curved-icon {
-    margin: 10px; border-radius: 15px; pointer-events: none;
-    }
-
-    .icon {
-    margin: 10px; pointer-events: none;
-    }
-
-
-
-
-    .fab:hover {
-      transition: 0.6s;
-      opacity: 0.6;
-      color: #db20c2;
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
-
-
-    border-radius: 60px;
-    }
-
-
-    a.fab {
-      font-size: 36px;
-      
-    }
-
     ::-moz-selection {
       color: rgba(74,33,102);
     }
-
     ::selection {
       color: rgba(74,33,102);
     }
-
-    .lo {
-      color: white;
-      text-align: center;
-    }
-
 	</style>
 </head>
 <script>
@@ -264,7 +91,7 @@
     <a href="bio">About</a>
   </div>
   <div class="container mt-3 text-center">
-    <div class="typewriter"><h1 >Seal makes some stuff on <a href="github" target="_blank" rel="noopener noreferrer" class="enter">GitHub.com</a> ⏎</h1></div>
+    <div class="typewriter"><h1 >Seal makes some stuff on <a href="github" target="_blank" rel="noopener noreferrer" class="titlecard">GitHub.com</a> ⏎</h1></div>
     <h3 style="padding-bottom:20px"></h3>
     <div class="subtypewriter" id="info"><p></p></div>
     <div class="subtypewriter" id="info2"><p></p></div>
@@ -280,16 +107,15 @@
     -->
   </div>
   <h3 style="padding-bottom:220px"></h3>
-    <h3 style="text-align:center;font-size:10px">Maintained and redesigned by <a href="github" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">sealldeveloper</a></h3>
+    <h3 style="text-align:center;font-size:10px;font-family: monospace;">Maintained and redesigned by <a href="github" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="titlecard">sealldeveloper</a></h3>
     <script>
       $("#discordAlert").click(function(){
         swal.fire({
           title: '<strong>Discord Tag and ID</strong>',
           icon: 'success',
           html:
-            'My Discord ID is <code onclick="navigator.clipboard.writeText(\'1055174780170543244\');swal.fire({title:\'Copied to clipboard!\',icon:\'info\'});" class="enter" style="font-size:20px">1055174780170543244</code> and ' +
-            'my current Discord Tag is <code onclick="navigator.clipboard.writeText(\'Seall.DEV#1508\');swal.fire({title:\'Copied to clipboard!\',icon:\'info\'});" class="enter" style="font-size:20px">Seall.DEV#1508</code>',
-          showCloseButton: true,
+            'My Discord ID is <code onclick="navigator.clipboard.writeText(\'1055174780170543244\');swal.fire({title:\'Copied to clipboard!\',icon:\'info\'});" class="titlecard" style="font-size:20px">1055174780170543244</code> and ' +
+            'my current Discord Tag is <code onclick="navigator.clipboard.writeText(\'Seall.DEV#1508\');swal.fire({title:\'Copied to clipboard!\',icon:\'info\'});" class="titlecard" style="font-size:20px">Seall.DEV#1508</code></a>.',          showCloseButton: true,
           showConfirmButton: false,
           focusConfirm: false
         })
@@ -298,7 +124,7 @@
         swal.fire({
           title: '<strong>GitHub</strong>',
           icon: 'success',
-          html: 'My GitHub account is <a href="./github" target="_blank" rel="noopener noreferrer" class="enter" style="font-size:20px">sealldeveloper</code>',
+          html: 'My GitHub account is <a href="./github" target="_blank" rel="noopener noreferrer" class="titlecard" style="font-size:20px">sealldeveloper</code></a>.',
           showCloseButton: true,
           showConfirmButton: false,
           focusConfirm: false
@@ -308,7 +134,7 @@
         swal.fire({
           title: '<strong>YouTube</strong>',
           icon: 'success',
-          html: 'My YouTube account is located <a href="./youtube" target="_blank" rel="noopener noreferrer" class="enter" style="font-size:20px">here</code>',
+          html: 'My YouTube account is located <a href="./youtube" target="_blank" rel="noopener noreferrer" class="titlecard" style="font-size:20px">here</code></a>.',
           showCloseButton: true,
           showConfirmButton: false,
           focusConfirm: false
@@ -318,7 +144,7 @@
         swal.fire({
           title: '<strong>Twitter</strong>',
           icon: 'success',
-          html: 'My Twitter account is <a href="./twitter" target="_blank" rel="noopener noreferrer" class="enter" style="font-size:20px">@sealldev</code>',
+          html: 'My Twitter account is <a href="./twitter" target="_blank" rel="noopener noreferrer" class="titlecard" style="font-size:20px">@sealldev</code></a>.',
           showCloseButton: true,
           showConfirmButton: false,
           focusConfirm: false
