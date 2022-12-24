@@ -17,7 +17,10 @@ document.addEventListener('visibilitychange', function(){
     if (page === '') {
       document.title='Home - Paused'
     } else {
-      page[0].toUpperCase()
+      page=page[0].toUpperCase()+page.substring(1)
+      if (page[page.length-1] === '/') {
+        page=page.slice(0,-1)
+      }
       document.title=page+' - Paused'
     }
     
@@ -49,7 +52,10 @@ function loop() {
     if (page === '') {
       document.title='Home - '+titleText[x++ % titleText.length];
     } else {
-      page[0].toUpperCase()
+      page=page[0].toUpperCase()+page.substring(1)
+      if (page[page.length-1] === '/') {
+        page=page.slice(0,-1)
+      }
       document.title=page+' - '+titleText[x++ % titleText.length];
     }
 }
