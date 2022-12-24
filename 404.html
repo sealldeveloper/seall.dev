@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:rgb(17, 5, 29) ;">
 <head>
 	<title>Seal - 404</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,19 +24,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	 crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
-	<script src="node_modules/xterm/lib/xterm.js"></script>
+	<link rel="stylesheet" href="css/zooms.css" />
+	<link rel="stylesheet" href="css/topnav.css"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="js/disable.js"></script>
-	<link rel="stylesheet" href="assets/style.css">
 </head>
 <script type="text/javascript">
-	function play()
-{
-}
 function goback() {
-	window.location.replace("https://seall.dev");
+	window.location.replace("https://seall.dev/");
 }
 </script>
 <style>
@@ -78,25 +73,36 @@ function goback() {
 		font-weight: 500;
 		margin-top: 15vh;
 	}
+	
 </style>
 </head>
-<body>
-	<div id="soundtrack"></div>
-	<div class="container mt-3 text-center" style="overflow:hidden;		box-shadow: 0 4px 8px 0 rgba(0, 0, 68, 1), 0 6px 20px 0 rgba(0, 0, 68, 1); background-color: rgba(0, 0, 68, 1)	;background-image:url('404b.gif');background-position: center;background-size:1200px;background-repeat: no-repeat;">
-		<h1 class="lo" , style="font-weight:400;padding-top:40px" class="featurette-heading">We couldn't find that page!</h1>
+<body style="background-color:rgb(17, 5, 29) ;">
+	<div class="topnav">
+		<a class="topnav-components" location="">Home</a>
+		<a class="topnav-components" location="projects">Projects</a>
+		<a class="topnav-components" location="bio">About</a>
+	</div>
+	<div class="text-center container" style="background-color:rgb(29, 8, 49) ;">
+		<br>
+		<h1 class="lo" style="font-weight:400;padding-top:25px" class="featurette-heading">We couldn't find that page!</h1>
 		<p class="lo">But here's a groovy space snake.</p>
 		<br>
-		<h3></h3>
-		<img src="404a.gif" alt="" width="auto" height="420px" style="border-radius:50px">
+		<img src="404meme.gif" class="curved-zoom-404"/>
 		<br>
-		<h3 style="padding-top:10px"></h3>
+		<br>
 		<button class="enter" onclick="goback();">Go Back</button>
-		<h3 style="padding-bottom:40px;"></h3>
-		<h3 style="padding-bottom:20px"></h3>
-		<h3 style="text-align:center;font-size:10px">Original GIF made by <a href="https://www.youtube.com/channel/UCM32U4ml919431QyuXCCYGg" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">kono neko</a></h3>
+		<br>
+		<br>
+		<h3 style="text-align:center;font-size:10px">Original GIF made by <a href="https://www.youtube.com/channel/UCM32U4ml919431QyuXCCYGg" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">kono neko</a> and meme edit made by <a href="https://seall.dev/" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">sealldeveloper</a></h3>
 		<h3 style="padding-bottom:40px"></h3>
 	</div>
 	<h3 style="padding-bottom:5px"></h3>
     <h3 style="text-align:center;font-size:10px">Maintained and redesigned by <a href="https://seall.dev/" style="font-size:10px"target="_blank" rel="noopener noreferrer" class="enter">sealldeveloper</a></h3>
 </body>
+<script>
+	elements=document.getElementsByClassName('topnav-components')
+	for (let i = 0; i < elements.length; i++) {
+		elements[i].href='https://seall.dev/'+elements[i].attributes[1].nodeValue
+	}
+</script>
 </html>
