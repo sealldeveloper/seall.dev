@@ -25,7 +25,7 @@ document.addEventListener('visibilitychange', function(){
     if (currentvalue !== '') {
       clearInterval(titletimer)
       currentvalue=titleText.find((o,i) => {
-        if (o===currentvalue){
+        if (o===currentvalue.split(' - ')[1]){
           x=i+1
           clearInterval(titletimer)
           loaded()
@@ -45,5 +45,11 @@ var x = 0;
 var titleText = ["Seal ✵", "Seal ✵","Seal", "Sea", "Se", "S", "S", "S", "Se", "Sea", "Seal", "Seal ✵"];
 
 function loop() {
-  document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length];
+  page=window.location.href.split('seall.dev/')[1]
+    if (page === '') {
+      document.title='Home - '+titleText[x++ % titleText.length];
+    } else {
+      page[0].toUpperCase()
+      document.title=page+' - '+titleText[x++ % titleText.length];
+    }
 }
